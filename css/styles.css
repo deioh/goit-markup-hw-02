@@ -24,11 +24,10 @@ body {
   list-style: none;
 }
 
-a:hover,
-a:focus {
-  color: rgba(77, 90, 229, 1);
+.section-topline a,
+.section-footer a {
+  text-decoration: none;
 }
-
 /* GLOBAL  */
 
 /* index html start*/
@@ -48,9 +47,18 @@ a:focus {
 .section-topline .logo-studio {
   color: var(--NAVY-BLUE);
 }
-.section-topline a,
-.section-footer a {
-  text-decoration: none;
+
+.menu a {
+  color: var(--NAVY-BLUE);
+}
+.contacts a {
+  color: var(--SLATE);
+}
+.menu a:hover,
+.menu a:focus,
+.contacts a:hover,
+.contacts a:focus {
+  color: rgba(77, 90, 229, 1);
 }
 
 /* HEADER SECTION END*/
@@ -78,7 +86,9 @@ a:focus {
 .hero-image button {
   border-radius: 4px;
   border: 1px solid var(--CORNFLOWER, #e7e9fc);
-  background: var(--CLOUD, #f4f4fd);
+  background: var(--IRIS, #4d5ae5);
+
+  /* background: var(--CLOUD, #f4f4fd); */
 }
 
 .hero-image button:focus,
@@ -92,12 +102,13 @@ a:focus {
   align-items: flex-start;
   gap: 10px; */
 
+  cursor: pointer;
   border-radius: 4px;
-  background: var(--IRIS, #4d5ae5);
+  background: var(--CLOUD, #f4f4fd);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
-  color: var(--WHITE, #fff);
-  cursor: pointer;
+  /* color: var(--WHITE, #fff); */
+  /* background: var(--IRIS, #4d5ae5); */
 }
 
 /* HERO SECTION END */
